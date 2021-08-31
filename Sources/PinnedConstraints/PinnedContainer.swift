@@ -51,12 +51,16 @@ public extension UIView {
                 $0.bottom.equalToSuperview().inset(layout.insets.bottom)
             }
             
-            if layout.pins.contains(.centerX) {
-                $0.centerX.equalToSuperview()
-            }
-            
-            if layout.pins.contains(.centerY) {
-                $0.centerY.equalToSuperview()
+            if layout.pins.contains(.center) {
+                $0.center.equalToSuperview()
+            } else {
+                if layout.pins.contains(.centerX) {
+                    $0.centerX.equalToSuperview()
+                }
+                
+                if layout.pins.contains(.centerY) {
+                    $0.centerY.equalToSuperview()
+                }
             }
         }
         
