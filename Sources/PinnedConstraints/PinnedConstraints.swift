@@ -92,7 +92,7 @@ public extension UIView {
 
 // MARK: - Pins
 
-extension UIView {
+public extension UIView {
     
     @discardableResult
     func pinToSuperview(insets: UIEdgeInsets = .zero) -> UIView {
@@ -253,7 +253,7 @@ extension UIView {
 
 // MARK: - Relative Constraints
 
-extension UIView {
+public extension UIView {
     
     @discardableResult
     func putBelow(_ aboveView: UIView, inset: CGFloat = .zero) -> UIView {
